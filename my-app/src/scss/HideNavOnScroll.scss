@@ -14,6 +14,9 @@
     left: calc((50vw - 20vmax));
   }
 
+  div.topNav {
+    font-style: italic;
+  }
   div.topNav.show {
     position: fixed;
     top: inherit;

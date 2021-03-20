@@ -98,11 +98,15 @@ const Hangman = () => {
   return (
     <Fragment>
       <div className='hangman'>
-        <h3>hangman game</h3>
-        <p>type a letter and guess the correct word</p>
-        <strong>
-          <p>chosed {chosenWord}</p>
-        </strong>
+        <h2>hangman game</h2>
+        <div style={{ height: '0.2em' }}></div>
+        <p className='instructions'>
+          type a letter and guess the correct word!
+        </p>
+
+        <p className='hint'>
+          correct: <strong>{chosenWord}</strong>
+        </p>
 
         <div className='container'>
           <svg

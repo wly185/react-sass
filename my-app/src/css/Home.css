@@ -16,17 +16,16 @@
   text-align: center;
 }
 * h1 {
-  font-size: 4vmax;
+  font-size: 2em;
 }
 * h2 {
-  font-size: 3vmax;
+  font-size: 1.5em;
 }
 * h3 {
-  font-size: 2vmax;
+  font-size: 1.2em;
 }
 * p {
-  font-size: 1.5vmax;
-  text-align: left;
+  font-size: 1em;
 }
 
 div {
@@ -64,17 +63,27 @@ hr {
   margin: 2px;
 }
 
-div.home div > h3 {
+.home header {
   width: 100vw;
   background-color: var(--primary);
 }
-div.home ul {
+.home main {
+  padding: 2em;
+  min-width: 80vw;
+  max-width: 600px;
+  margin: auto;
+}
+.home ul {
   padding: 1em;
   text-align: left;
   list-style-type: disc;
 }
-div.home p {
-  color: blue;
+.home li:nth-child(1) {
+  font-size: 1.1em;
+  list-style-type: none;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: -2vw;
 }
 
 /*# sourceMappingURL=Home.css.map */

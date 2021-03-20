@@ -74,8 +74,10 @@ const MemoryGame2 = () => {
   return (
     <Fragment>
       <div className='memory-game-2'>
-        <h3>game</h3>
-        <p>click a square to flip</p>
+        <h2>test your memory!</h2>
+        <p className='instructions'>
+          click a square to flip, they will stay flipped if they match
+        </p>
         <div className='game'>
           <div className='board'>
             {labeled.map((i, key) => {

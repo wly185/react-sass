@@ -34,7 +34,7 @@ const HideNavOnScroll = (props) => {
             ref={refTopNav}
             className={`topNav ${scrollPos - prevValue <= 0 ? 'show' : 'hide'}`}
           >
-            topNav {height}px
+            this will be hidden on scroll down and appear on scroll up
           </div>
 
           <div className='paragraphs'>

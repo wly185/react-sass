@@ -16,17 +16,16 @@
   text-align: center;
 }
 * h1 {
-  font-size: 4vmax;
+  font-size: 2em;
 }
 * h2 {
-  font-size: 3vmax;
+  font-size: 1.5em;
 }
 * h3 {
-  font-size: 2vmax;
+  font-size: 1.2em;
 }
 * p {
-  font-size: 1.5vmax;
-  text-align: left;
+  font-size: 1em;
 }
 
 div {
@@ -70,6 +69,10 @@ hr {
 }
 .hangman p {
   font-size: 1.5vmax;
+  text-align: center;
+}
+.hangman p.instructions {
+  font-style: italic;
 }
 .hangman button {
   font-size: 1.5vmax;

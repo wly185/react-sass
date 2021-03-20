@@ -23,7 +23,7 @@ const Card = (i, flipped, solved, current, isSolved) => {
 
   //conditional style
   const solvedStyle = () => {
-    return i.solved.includes(i.i.index) === true ? 'green' : 'white';
+    return i.solved.includes(i.i.index) === true ? '#D3D3D3' : 'white';
   };
 
   return (

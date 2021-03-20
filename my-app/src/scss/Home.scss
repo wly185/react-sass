@@ -1,17 +1,30 @@
 @use './main.scss';
 
-div.home {
-  div > h3 {
+.home {
+  header {
     width: 100vw;
     background-color: var(--primary);
   }
+
+  main {
+    padding: 2em;
+    min-width: 80vw;
+    max-width: 600px;
+
+    margin: auto;
+  }
+
   ul {
     padding: 1em;
     text-align: left;
     list-style-type: disc;
   }
 
-  p {
-    color: blue;
+  li:nth-child(1) {
+    font-size: 1.1em;
+    list-style-type: none;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: -2vw;
   }
 }
