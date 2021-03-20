@@ -1,0 +1,1 @@
+@use './main.scss';.hide-nav-onscroll div.frame{border:1px solid;position:relative;overflow:scroll;width:40vmax;height:40vh;margin:auto}.hide-nav-onscroll .negative-spacing{margin-top:3.5vmax}.hide-nav-onscroll div.topNav.show{position:fixed;top:inherit;width:40vmax;border:1px solid;padding:0.5em;background-color:var(--primary)}

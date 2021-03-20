@@ -3,21 +3,21 @@ import path from 'path';
 
 const app = express();
 
-// if ((process.env.NODE_ENV = 'production')) {
-//   app.use(express.static(path.join(__dirname, 'my-app/build')));
+if ((process.env.NODE_ENV = 'production')) {
+  app.use(express.static(path.join(__dirname, 'my-app/build')));
 
-//   app.get('/', function (req, res) {
-//     res.sendFile(path.join(__dirname, 'my-app', 'build', 'index.html'));
-//   });
-// }
+  app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'my-app', 'build', 'index.html'));
+  });
+}
 
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, 'my-app/build')));
+// app.use(express.static(path.join(__dirname, 'my-app/build')));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'my-app', 'build', 'index.html'));
-});
+// app.get('/', function (req, res) {
+//   res.sendFile(path.join(__dirname, 'my-app', 'build', 'index.html'));
+// });
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
