@@ -64,48 +64,27 @@ hr {
   margin: 2px;
 }
 
-.side-nav ul.initial {
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100vw;
+  border: 1px solid black;
   position: fixed;
-  top: inherit;
-  left: -10em;
-  background-color: transparent;
-  color: var(--mono);
-  overflow: scroll;
-  height: 100vh;
-  width: 10em;
-  transition: left 1s;
-}
-.side-nav ul.trigger {
   top: 0;
-  left: 0;
-  background-color: transparent;
-  color: var(--mono);
-  overflow: scroll;
-  height: 100vh;
-  width: 10em;
-  transition: left 1s;
-}
-.side-nav button.click {
-  text-align: center;
-  border-radius: 2em;
-  width: fit-content;
-  z-index: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 0.5em;
-}
-.side-nav .list li {
-  text-align: left;
-  padding: 0.7em 0 0.7em 0;
-}
-.side-nav .list li :hover {
-  background-color: var(--mono-lighten-2);
-  width: 100%;
-  background-color: var(--mono-lighten-3);
-}
-.side-nav .list li button {
   background-color: white;
 }
+.navigation .buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
+  justify-items: stretch;
+  background-color: white;
+}
+.navigation .button {
+  white-space: normal;
+  height: fit-content;
+  margin: 2px;
+}
 
-/*# sourceMappingURL=SideNav.css.map */
+/*# sourceMappingURL=Navigation.css.map */

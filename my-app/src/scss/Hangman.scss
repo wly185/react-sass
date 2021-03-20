@@ -1,7 +1,5 @@
 @use './main.scss';
 .hangman {
-  position: absolute;
-  top: inherit;
   width: 100vw;
   background-color: var(--primary);
   p {

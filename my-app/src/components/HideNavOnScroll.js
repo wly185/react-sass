@@ -29,21 +29,6 @@ const HideNavOnScroll = (props) => {
   return (
     <Fragment>
       <div className='hide-nav-onscroll'>
-        {/* <div className='data'>
-          <div
-            className='scroll'
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-          >
-            Curr ScrollTop{scrollPos}
-          </div>
-          <div>Prev ScrollTop: {prevValue}</div>
-          <div>Delta Scrolltop {scrollPos - prevValue}</div>
-          <div>
-            {`className topNav ${scrollPos - prevValue <= 0 ? 'show' : 'hide'}`}
-          </div>{' '}
-        </div> */}
-
         <div onScroll={onScroll} className='frame'>
           <div
             ref={refTopNav}
@@ -52,7 +37,6 @@ const HideNavOnScroll = (props) => {
             topNav {height}px
           </div>
 
-          {/* <div className='negative-spacing'></div> */}
           <div className='paragraphs'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut

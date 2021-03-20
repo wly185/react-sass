@@ -65,8 +65,6 @@ hr {
 }
 
 .memory-game-2 {
-  position: absolute;
-  top: inherit;
   background-color: var(--primary);
   height: fit-content;
 }

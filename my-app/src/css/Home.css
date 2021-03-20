@@ -64,10 +64,6 @@ hr {
   margin: 2px;
 }
 
-div.home {
-  position: absolute;
-  top: inherit;
-}
 div.home div > h3 {
   width: 100vw;
   background-color: var(--primary);

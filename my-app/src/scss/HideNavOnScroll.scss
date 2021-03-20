@@ -1,11 +1,9 @@
 @use './main.scss';
 
 .hide-nav-onscroll {
-  position: absolute;
-  top: inherit;
-  left: calc((50vw - 20vmax));
+  // left: calc((50vw - 20vmax));
+  // margin: auto;
 
-  margin: auto;
   div.frame {
     display: bl;
     border: 1px solid;
@@ -13,6 +11,7 @@
     overflow: scroll;
     width: 40vmax;
     height: 40vh;
+    left: calc((50vw - 20vmax));
   }
 
   div.topNav.show {

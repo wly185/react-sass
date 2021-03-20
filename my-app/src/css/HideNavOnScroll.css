@@ -64,12 +64,6 @@ hr {
   margin: 2px;
 }
 
-.hide-nav-onscroll {
-  position: absolute;
-  top: inherit;
-  left: calc((50vw - 20vmax));
-  margin: auto;
-}
 .hide-nav-onscroll div.frame {
   display: bl;
   border: 1px solid;
@@ -77,6 +71,7 @@ hr {
   overflow: scroll;
   width: 40vmax;
   height: 40vh;
+  left: calc((50vw - 20vmax));
 }
 .hide-nav-onscroll div.topNav.show {
   position: fixed;

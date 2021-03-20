@@ -1,8 +1,6 @@
 @use './main.scss';
 
 div.home {
-  position: absolute;
-  top: inherit;
   div > h3 {
     width: 100vw;
     background-color: var(--primary);
