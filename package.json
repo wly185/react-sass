@@ -1,0 +1,17 @@
+{
+  "name": "react-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix my-app && npm run build --prefix my-app"
+  },
+  "author": "wly185",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

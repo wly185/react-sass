@@ -1,0 +1,53 @@
+@use './main.scss';
+
+.calculator {
+  background-color: darkgrey;
+  width: fit-content;
+  height: fit-content;
+  padding: 1vh;
+  display: grid;
+  row-gap: 1vh;
+  margin: auto;
+
+  div.screen {
+    margin: auto;
+
+    width: 37vh;
+    background: lightgrey;
+    height: fit-content;
+    padding: 0.1vh;
+    text-align: right;
+    p.top-screen {
+      font-size: 8vh;
+      height: 8vh;
+    }
+    p.bottom-screen {
+      font-size: 5vh;
+      height: 5vh;
+    }
+  }
+  div.container {
+    margin: auto;
+    padding: 0.2vmin;
+    column-gap: 0.2vmin;
+    row-gap: 0.2vmin;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: fit-content;
+    width: fit-content;
+    background: grey;
+    div {
+      height: 9vh;
+      width: 9vh;
+      font-size: 6vh;
+      line-height: 9vh;
+      border-radius: 4.5vh;
+      background-color: lightblue;
+
+      padding: 0.2vmin;
+    }
+  }
+  div.result {
+    width: 6em;
+  }
+}

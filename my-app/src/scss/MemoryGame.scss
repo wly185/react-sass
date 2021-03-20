@@ -1,0 +1,30 @@
+@use './main.scss';
+
+.memory-game-2 {
+  background-color: var(--primary);
+  height: fit-content;
+  p {
+    font-size: 1.5vmax;
+  }
+  div.game {
+    border: 1px solid black;
+    width: 100vw;
+    background-color: white;
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: fit-content;
+      margin: auto;
+      border: 1px solid black;
+    }
+
+    .card {
+      width: 18vmin;
+      height: 18vmin;
+      border: 1px solid;
+      font-size: 15vmin;
+      line-height: 18vmin;
+    }
+  }
+}

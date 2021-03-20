@@ -1,0 +1,73 @@
+@use './main.scss';
+.hangman {
+  position: relative;
+  top: inherit;
+  width: 100vw;
+  background-color: var(--primary);
+  p {
+    font-size: 1.5vmax;
+  }
+  button {
+    font-size: 1.5vmax;
+  }
+  div.container {
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 2px;
+
+    svg {
+      fill: transparent;
+      stroke: black;
+      stroke-width: 4px;
+      stroke-linecap: round;
+      margin: auto;
+      width: 35vh;
+      height: 50vh;
+    }
+
+    .letters {
+      width: 40vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .letter {
+        width: calc(40vh / 13);
+        height: calc(40vh / 13);
+        font-size: calc(40vh / 13 * 0.8);
+        border-bottom: 1px solid black;
+        margin: 1px;
+        padding: 1px;
+      }
+    }
+
+    .alphabets {
+      border: 1px solid black;
+      display: grid;
+
+      grid-template-columns: repeat(13, 1fr);
+
+      .alphabet {
+        border-radius: 50%;
+        width: calc(40vh / 14);
+        height: calc(40vh / 14);
+        font-size: calc(40vh / 14 * 0.8);
+        border: none;
+      }
+
+      .alphabet.correct {
+        background: lightgreen;
+      }
+
+      .alphabet.wrong {
+        background: grey;
+      }
+    }
+  }
+}

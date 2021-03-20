@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  background-color: inherit;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: none;
+  list-style-type: none;
+  color: inherit;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1vmax;
+}
+* h1,
+* h2,
+* h3 {
+  text-align: center;
+}
+* h1 {
+  font-size: 4vmax;
+}
+* h2 {
+  font-size: 3vmax;
+}
+* h3 {
+  font-size: 2vmax;
+}
+* p {
+  font-size: 1vmax;
+}
+
+div {
+  text-align: center;
+}
+
+:root {
+  --primary: #fa8072;
+  --primary-dark: #ce4738;
+  --primary-light: #facdc8;
+  --mono: #848383;
+  --mono-lighten-1: #ababab;
+  --mono-lighten-2: #d5d5d5;
+  --mono-lighten-3: #f1f1f1;
+  --mono-darken-1: #555555;
+  --mono-darken-2: #242424;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+  border-radius: calc(2.5vw / 2);
+  font-size: 2vmax;
+  padding: 0.2vmax;
+  margin: 0.3vmax;
+  background-color: var(--primary);
+}
+
+button:hover {
+  background-color: var(--mono-lighten-3);
+}
+
+hr {
+  border-top: 2px solid var(--mono-lighten-2);
+  margin: 2px;
+}
+
+.hangman {
+  position: relative;
+  top: inherit;
+  width: 100vw;
+  background-color: var(--primary);
+}
+.hangman p {
+  font-size: 1.5vmax;
+}
+.hangman button {
+  font-size: 1.5vmax;
+}
+.hangman div.container {
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 2px;
+}
+.hangman div.container svg {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  margin: auto;
+  width: 35vh;
+  height: 50vh;
+}
+.hangman div.container .letters {
+  width: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.hangman div.container .letters .letter {
+  width: calc(40vh / 13);
+  height: calc(40vh / 13);
+  font-size: calc(40vh / 13 * 0.8);
+  border-bottom: 1px solid black;
+  margin: 1px;
+  padding: 1px;
+}
+.hangman div.container .alphabets {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+}
+.hangman div.container .alphabets .alphabet {
+  border-radius: 50%;
+  width: calc(40vh / 14);
+  height: calc(40vh / 14);
+  font-size: calc(40vh / 14 * 0.8);
+  border: none;
+}
+.hangman div.container .alphabets .alphabet.correct {
+  background: lightgreen;
+}
+.hangman div.container .alphabets .alphabet.wrong {
+  background: grey;
+}
+
+/*# sourceMappingURL=Hangman.css.map */
