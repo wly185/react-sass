@@ -52,7 +52,7 @@ const HideNavOnScroll = (props) => {
             topNav {height}px
           </div>
 
-          <div className='negative-spacing'></div>
+          {/* <div className='negative-spacing'></div> */}
           <div className='paragraphs'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut

@@ -5,12 +5,14 @@ import SideNav from './components/SideNav';
 import HideNavOnScroll from './components/HideNavOnScroll';
 import MemoryGame2 from './components/MemoryGame2';
 import Calculator from './components/Calculator';
+import Home from './components/Home';
 
 import Hangman from './components/Hangman';
 function App() {
   const [currentTab, setTab] = useState(0);
 
   const tab = [
+    { name: 'home page', component: <Home /> },
     { name: 'animated left slider', component: <SideNav /> },
     { name: 'sticky top nav', component: <HideNavOnScroll /> },
     {

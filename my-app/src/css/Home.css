@@ -64,53 +64,21 @@ hr {
   margin: 2px;
 }
 
-.side-nav {
+div.home {
   position: absolute;
   top: inherit;
 }
-.side-nav ul.initial {
-  position: fixed;
-  top: inherit;
-  left: -10em;
-  background-color: transparent;
-  color: var(--mono);
-  overflow: scroll;
-  height: 100vh;
-  width: 10em;
-  transition: left 1s;
+div.home div > h3 {
+  width: 100vw;
+  background-color: var(--primary);
 }
-.side-nav ul.trigger {
-  position: relative;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  color: var(--mono);
-  overflow: scroll;
-  height: 100vh;
-  width: 10em;
-  transition: left 1s;
-}
-.side-nav button.click {
-  text-align: center;
-  border-radius: 2em;
-  width: fit-content;
-  z-index: 1;
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 0.5em;
-}
-.side-nav .list li {
+div.home ul {
+  padding: 1em;
   text-align: left;
-  padding: 0.7em 0 0.7em 0;
+  list-style-type: disc;
 }
-.side-nav .list li :hover {
-  background-color: var(--mono-lighten-2);
-  width: 100%;
-  background-color: var(--mono-lighten-3);
-}
-.side-nav .list li button {
-  background-color: white;
+div.home p {
+  color: blue;
 }
 
-/*# sourceMappingURL=SideNav.css.map */
+/*# sourceMappingURL=Home.css.map */

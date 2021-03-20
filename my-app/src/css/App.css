@@ -6,10 +6,9 @@
   border: none;
   box-sizing: border-box;
   box-shadow: none;
-  list-style-type: none;
   color: inherit;
   font-family: "Quicksand", sans-serif;
-  font-size: 1vmax;
+  font-size: 1.5vmax;
 }
 * h1,
 * h2,
@@ -26,7 +25,8 @@
   font-size: 2vmax;
 }
 * p {
-  font-size: 1vmax;
+  font-size: 1.5vmax;
+  text-align: left;
 }
 
 div {
@@ -70,8 +70,8 @@ div.app {
 }
 
 div.app.top-panel {
-  width: 100vw;
   height: fit-content;
+  width: 100vw;
   border: 1px solid black;
   position: fixed;
   top: 0;
@@ -80,11 +80,10 @@ div.app.top-panel {
 
 h3.app.title {
   display: block;
-  padding: 0.2vh;
+  padding: 5px;
 }
 
 div.app.tab-button-container {
-  width: 100vw;
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -93,7 +92,8 @@ div.app.tab-button-container {
 }
 
 button.app.button {
-  margin: 0.5vh;
+  white-space: normal;
+  margin: 2px;
 }
 
 div.app.empty {

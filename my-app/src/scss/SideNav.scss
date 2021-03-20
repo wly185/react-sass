@@ -1,8 +1,7 @@
 @use './main.scss';
 
 .side-nav {
-  height: 100%;
-  position: fixed;
+  position: absolute;
   top: inherit;
   ul.initial {
     position: fixed;

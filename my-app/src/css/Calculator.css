@@ -6,10 +6,9 @@
   border: none;
   box-sizing: border-box;
   box-shadow: none;
-  list-style-type: none;
   color: inherit;
   font-family: "Quicksand", sans-serif;
-  font-size: 1vmax;
+  font-size: 1.5vmax;
 }
 * h1,
 * h2,
@@ -26,7 +25,8 @@
   font-size: 2vmax;
 }
 * p {
-  font-size: 1vmax;
+  font-size: 1.5vmax;
+  text-align: left;
 }
 
 div {

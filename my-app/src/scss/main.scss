@@ -10,11 +10,11 @@
   box-sizing: border-box;
   box-shadow: none;
   //list items
-  list-style-type: none;
+  // list-style-type: none;
   //typography
   color: inherit;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1vmax;
+  font-size: 1.5vmax;
   //typography - size based on vmax
   h1,
   h2,
@@ -33,7 +33,8 @@
     font-size: 2vmax;
   }
   p {
-    font-size: 1vmax;
+    font-size: 1.5vmax;
+    text-align: left;
   }
 }
 

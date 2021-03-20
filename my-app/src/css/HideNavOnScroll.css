@@ -6,10 +6,9 @@
   border: none;
   box-sizing: border-box;
   box-shadow: none;
-  list-style-type: none;
   color: inherit;
   font-family: "Quicksand", sans-serif;
-  font-size: 1vmax;
+  font-size: 1.5vmax;
 }
 * h1,
 * h2,
@@ -26,7 +25,8 @@
   font-size: 2vmax;
 }
 * p {
-  font-size: 1vmax;
+  font-size: 1.5vmax;
+  text-align: left;
 }
 
 div {
@@ -64,16 +64,19 @@ hr {
   margin: 2px;
 }
 
+.hide-nav-onscroll {
+  position: absolute;
+  top: inherit;
+  left: calc((50vw - 20vmax));
+  margin: auto;
+}
 .hide-nav-onscroll div.frame {
+  display: bl;
   border: 1px solid;
-  position: relative;
+  position: absolute;
   overflow: scroll;
   width: 40vmax;
   height: 40vh;
-  margin: auto;
-}
-.hide-nav-onscroll .negative-spacing {
-  margin-top: 3.5vmax;
 }
 .hide-nav-onscroll div.topNav.show {
   position: fixed;
